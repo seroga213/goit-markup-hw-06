@@ -801,9 +801,10 @@
   transition: fill var(--transition);
   
 }
-.button-close:hover .icon-close
-.button-close:focus .icon-close{
+.button-close:hover,
+.button-close:focus {
 fill: var(--accent-color);
+
 }
 
 
@@ -936,10 +937,11 @@ fill: var(--accent-color);
 .check-text:focus{
   border-color: var(--accent-color);
 }
-
-.focus{
-  border-color: var(--accent-color);
+.button-close:hover,
+.button-close:focus{
+  fill: var(--accent-color);
 }
+
 
 .check-text {
   font-size: 14px;
