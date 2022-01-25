@@ -362,7 +362,7 @@
     <!-- ФУТЕР -->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="address-container">
+        <div class="footer-cont-item">
         <a href="./index.html" class="logo-footer link">Web<span class="logo-white">Studio</span></a>
         <address class="footer-addr">
                 <ul  class="footer-addr-list list ">
@@ -372,7 +372,7 @@
                 </ul>
             </address>
         </div>
-        <div class="footer-social-container">   
+        <div class="footer-cont-item">   
           <h3 class="footer-title">присоединяйтесь</h3>
           <ul class="social-list list">
               <li class="social-item">
@@ -406,7 +406,7 @@
           </ul>
       </div>
    
-    <div class="footer-form-container">
+    <div class="footer-cont-item">
       <form action="#" class="footer-form">
         <label class="footer-label">
           подпишитесь на рассылку
@@ -419,7 +419,7 @@
         </label>
         <button type="submit" class="hero-btn footer-btn">
           Подписаться
-          <svg class="subscribe-btn" width="24px" height="24px">
+          <svg class="subscribe-btn" width="24" height="24">
             <use href="./images/icons.svg#icon-subscribe"></use>
           </svg>
         </button>
@@ -431,7 +431,7 @@
     <div class="overlay-js is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-close" data-modal-close>
-          <svg width="11px" height="11px">
+          <svg class="form-svs" width="11" height="11">
             <use href="./images/icons.svg#vektor"></use>
           </svg>
         </button>
@@ -447,8 +447,8 @@
                 required
                 name="user-name"
                 minlength="2"
-                id="user-name"
-              /><svg class="form-svg" width="18px" height="18px">
+                id="user-name"/>
+              <svg class="form-svg" width="18" height="18">
                 <use href="./images/icons.svg#icon-Input-name"></use>
               </svg>
             </div>
@@ -464,7 +464,7 @@
                 id="user-tel"
                 title="+380 (95) 111-11-11"
               />
-              <svg class="form-svg" width="18px" height="18px">
+              <svg class="form-svg" width="18" height="18">
                 <use href="./images/icons.svg#icon-Input-tel"></use>
               </svg>
             </div>
@@ -479,7 +479,7 @@
                 name="user-email"
                 id="user-email"
               />
-              <svg class="form-svg" width="18px" height="18px">
+              <svg class="form-svg" width="18" height="18">
                 <use href="./images/icons.svg#icon-Input-mail"></use>
               </svg>
             </div>
@@ -502,8 +502,8 @@
               class="policy-check visually-hidden"
             />
             <label for="policy" class="check-text">
-              <span>
-                <svg class="check-svg" width="16px" height="15px">
+              <span class="">
+                <svg class="check-svg" width="16" height="15">
                   <use href="./images/icons.svg#icon-vector-check"></use>
                 </svg>
               </span>
@@ -511,7 +511,7 @@
               <a href="" class="label-link">Условия договора</a>
             </label>
           </div>
-          <button type="submit" class="hero-btn ">Отправить</button>
+          <button type="submit" class="hero-btn modal-btn">Отправить</button>
         </form>
       </div>
     </div>

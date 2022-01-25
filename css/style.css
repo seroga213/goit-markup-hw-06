@@ -794,10 +794,22 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  background: var(--external-color);
+  background-color: var(--external-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
+  transition: fill var(--transition);
+  
+}
+.button-close:hover .icon-close
+.button-close:focus .icon-close{
+fill: var(--accent-color);
+}
+
+
+
+.form-field{
+  margin-bottom: 10px;
 }
 
 .overlay-js.is-hidden {
@@ -809,7 +821,9 @@
   transform: translate(-50%, 0%) scale(0);
 }
 
-
+.form-input:focus{
+  border-color: var(--accent-color);
+}
 
 
 .modal-title{
@@ -862,10 +876,31 @@
   transform: translateY(-50%);
   top: 50%;
   left: 15px;
-  transition-property: fill;
-  transition: var(--transition);
+  transition: fill var(--transition);
 }
 
+
+.form-input:focus,
+.modal-textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:focus + .form-svg {
+  fill: var(--accent-color);
+}
+
+
+.footer-cont-item:not(last-child){
+  margin-right: 70px;
+}
+.footer-cont-item:last-child{
+  margin-left: auto;
+}
+
+.modal-btn:hover,
+.modal-btn:focus{
+   color: var(--external-color);
+}
 .modal-textarea{
   outline: none;
   width: 100%;
@@ -892,10 +927,14 @@
   border: none;
   fill: var(--external-color);
 }
+
 .check-svg{
   fill: transparent;
-  transition-property: fill, border;
-  transition: var(--transition);
+  transition: fill, border var(--transition);
+}
+.check-text:hover,
+.check-text:focus{
+  border-color: var(--accent-color);
 }
 .check-text {
   font-size: 14px;
@@ -913,8 +952,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: border-color, background-color;
-  transition: var(--transition);
+  transition: border-color, background-color var(--transition);
 }
 .label-link{
   color: var(--accent-color);
