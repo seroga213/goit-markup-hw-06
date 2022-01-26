@@ -9,6 +9,7 @@
     --icons-color: #afb1b8;
     --primery-font: 'Roboto', sans-serif;
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --button-hover:#188CE8;
   }
   
   body {
@@ -369,7 +370,7 @@
   
   .hero-btn:hover,
   .hero-btn:focus {
-    background-color: var(--accent-color)
+    background-color: var(--button-hover);
   }
   
   /* -------------Наши особенности------------ */
@@ -711,7 +712,7 @@
 }
 
 .footer-input-email {
-  width: 100%;
+  width: 360px;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -720,8 +721,7 @@
   border-radius: 4px;
   outline: none;
   background-color: inherit;
-  margin-top: 20px;
-  color: var(--primery-bgr-color);
+  color: var(--external-color);
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -733,6 +733,7 @@
 
 .footer-form {
   display: flex;
+  align-items: flex-end;
 }
 
 .footer-btn {
@@ -743,14 +744,14 @@
 }
 
 .footer-label {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--external-color);
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
 }
 
+.subscribe-btn{
+  margin-left: 10px;
+}
 
 
 
@@ -891,7 +892,7 @@ fill: var(--accent-color);
 }
 
 
-.footer-cont-item:not(last-child){
+.footer-cont-item:not(:last-child){
   margin-right: 70px;
 }
 .footer-cont-item:last-child{
@@ -928,7 +929,12 @@ fill: var(--accent-color);
   border: none;
   fill: var(--external-color);
 }
-
+/*
+.aqswde:hover,
+.aqswde:focus{
+  border: aqua;
+}  
+*/
 .check-svg{
   fill: transparent;
   transition: fill, border var(--transition);
@@ -949,7 +955,9 @@ fill: var(--accent-color);
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
 .check-text span {
   width: 16px;
   height: 15px;
@@ -963,11 +971,6 @@ fill: var(--accent-color);
 }
 .label-link{
   color: var(--accent-color);
+  margin-left: 4px;
 }
 
-.footer-btn {
-  margin-left: 15px;
-  margin-top: 36px;
-  position: relative;
-  display: flex;
-}
