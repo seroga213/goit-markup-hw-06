@@ -10,6 +10,7 @@
     --primery-font: 'Roboto', sans-serif;
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --button-hover:#188CE8;
+    --grey-rgba:rgba(117, 117, 117, 0.5)
   }
   
   body {
@@ -678,7 +679,6 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-text-color);
     margin-bottom: 20px;
     color: var(--external-color);
   }
@@ -747,7 +747,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.footer-input-email:hover,
 .footer-input-email:focus {
   border-color: var(--accent-color);
 }
@@ -911,7 +911,8 @@ fill: var(--accent-color);
 }
 
 
-.form-input:focus + .form-svg {
+.form-input:focus + .form-svg,
+.form-input:hover + .form-svg {
   fill: var(--accent-color);
 }
 
@@ -940,10 +941,14 @@ fill: var(--accent-color);
   transition: var(--transition);
 }
 
+.modal-textarea::placeholder{
+  color: var(--grey-rgba);
+}
+
 .form-field-checkbox{
   margin-bottom: 30px;
 }
-.policy-check:checked + .check-text span {
+.policy-check:checked + .check-text .check-span {
   background-color: var(--accent-color);
 }
 
