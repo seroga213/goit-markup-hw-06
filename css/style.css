@@ -814,6 +814,10 @@ fill: var(--accent-color);
   margin-bottom: 10px;
 }
 
+.form-field-textarea{
+  margin-bottom: 20px;
+}
+
 .overlay-js.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -845,6 +849,7 @@ fill: var(--accent-color);
 
 
 .modal-label{
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -881,11 +886,11 @@ fill: var(--accent-color);
   transition: fill var(--transition);
 }
 
-
-.form-input:focus,
-.modal-textarea:focus {
+.form-input:hover,  .modal-textarea:hover,
+.form-input:focus,  .modal-textarea:focus {
   border-color: var(--accent-color);
 }
+
 
 .form-input:focus + .form-svg {
   fill: var(--accent-color);
@@ -904,16 +909,15 @@ fill: var(--accent-color);
    color: var(--external-color);
 }
 .modal-textarea{
+  display: block;
   outline: none;
   width: 100%;
   min-height: 120px;
   padding: 12px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(117, 117, 117, 0.5);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 20px;
   resize: none;
-  transition-property: border-color;
   transition: var(--transition);
 }
 
@@ -921,7 +925,7 @@ fill: var(--accent-color);
   margin-bottom: 30px;
 }
 .policy-check:checked + .check-text span {
-  border: none;
+ border: none;
   background-color: var(--accent-color);
 }
 
@@ -929,12 +933,26 @@ fill: var(--accent-color);
   border: none;
   fill: var(--external-color);
 }
-/*
-.aqswde:hover,
-.aqswde:focus{
-  border: aqua;
-}  
-*/
+
+.check-span{
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color, background-color var(--transition);
+}
+
+
+.check-span:hover,
+.check-span:focus{
+  border: 2px solid var(--accent-color);
+}
+
+
 .check-svg{
   fill: transparent;
   transition: fill, border var(--transition);
@@ -958,17 +976,8 @@ fill: var(--accent-color);
   justify-content: center;
 }
 
-.check-text span {
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--title-color);
-  border-radius: 2px;
-  margin-right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: border-color, background-color var(--transition);
-}
+
+
 .label-link{
   color: var(--accent-color);
   margin-left: 4px;
